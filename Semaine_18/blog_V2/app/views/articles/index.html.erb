@@ -1,0 +1,9 @@
+<!- app/views/pages/home.html.erb ->
+
+<h1>Liste des articles</h1>
+<hr class="sepa_form">
+
+<% @articles.each do |article| %>
+  <h2> <a href="/articles/<%= article.id %>"> <%=article.title %></a></h2>
+  <hr />
+<% end %>
