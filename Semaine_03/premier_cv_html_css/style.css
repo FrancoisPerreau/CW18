@@ -1,0 +1,129 @@
+body {
+  background-color: #bd7543;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+}
+/*----------début header----------*/
+header  {
+  background: url("images/cv-2017-header_04.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 380px;
+  margin-bottom: 5px;
+  }
+
+.contenu_header {
+  position: relative;
+  top: 260px;
+}
+/*----------fin header----------*/
+
+
+/*----------début header texte----------*/
+.header_nom {
+  font-family:'Amatic SC', cursive;
+  font-weight:700;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  line-height:1;
+  margin: 0;
+}
+
+.header_titre {
+  font-family:'Teko', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.1;
+  margin: 0;
+}
+/*----------fin header texte----------*/
+
+
+
+/*----------début main et section----------*/
+main {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #474747;
+}
+
+section {
+  padding-top: 5px; padding-left: 35px;padding-right: 35px; padding-bottom: 20px;
+  margin-top: 0; margin-left: 10%; margin-right: 10%;
+  background-color: #fff;
+}
+/*----------fin main et section----------*/
+
+
+/*----------début section texte----------*/
+.section_titre {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 100%;
+  line-height: 1.1;
+  color: #474747;
+  border-bottom: 1px dashed #474747;
+}
+
+.parcours_titre, .formation_titre {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0;
+}
+        /*----------début span titre et p bold----------*/
+.titre_bold, .p_bold {
+    font-weight: 400;
+}
+        /*----------fin span titre et p bold----------*/
+
+.liste_desc, .formation_p {
+  margin-top: 2px;
+  margin-bottom: 20px;
+}
+
+
+.parcours_soc  {
+  list-style-type: circle;
+  font-size: 16px;
+  font-weight: 600;
+  color: #bd7543;
+}
+        /*-----------début span light-------------*/
+.soc_light {
+  font-weight: 300;
+}
+        /*-----------fin span light-------------*/
+
+.parcours_desc {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.parcours_miss, .formation_p {
+  list-style: none;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+
+/*----------fin section texte----------*/
+
+
+/*----------début footer----------*/
+footer {
+      text-align: center;
+      }
+
+
+.footer_txt {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff
+}
+/*----------fin footer----------*/
