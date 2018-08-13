@@ -1,0 +1,88 @@
+/* CSS Jeu Morpion */
+body {
+	background-color: rgb(12,51,5);
+}
+
+header{
+	background-color:#006565;
+	
+	color:#cbff00;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#jeu {
+	background: url(../images/Fond_1.png) no-repeat;
+	background-size: cover;
+	padding: 0;
+}
+
+
+.col-xs-4 {
+	border: 1px solid rgba(12,51,5,0.4);
+	height: 120px;
+	border-style: dashed;
+}
+
+
+/* ************* Class Case Jeu ************ */
+.nonJoue{
+	/* Class vide, mais que je teste dans le javascript, pour savoir si la case a été jouée */
+}
+
+
+.joueur1{
+	background: url(../images/pion_m1.png) no-repeat center;
+	background-size: contain;
+}
+
+.joueur2{
+	background: url(../images/pion_m2.png) no-repeat center;
+	background-size: contain;
+
+}
+
+
+
+/* ********** Div Victoire *********** */
+.rel{
+	position: relative;
+	/* je la déclare en position relative, pour que la #victoire (qui est une div enfant)
+	que je déclare en absolute, calcule sa position à partir de cette div,
+	et non pas à partir du coin en haut à gauche de l'écran */
+}
+
+
+
+#victoire{
+	background-color: rgba(230,77,18,0.80); /* rgba pour avoir la transparence */
+	position: absolute;
+	/* Je déclare cette div en absolute pour la faire sortire du flux,
+	elle peut ainsi ce positionner par dessus #jeu */
+
+	top: 0;
+  	right: 0;
+	height: 100%;
+	width: 100%;
+	
+	color:#FFFFFF;
+	font-size: 3em;
+	}
+
+#victoire, p{
+	margin: auto;
+	text-align: center;
+}
+
+
+/* ************ Score joueurs ********** */
+#score{
+	display: block;
+	padding-top: 5px;
+	
+	color: #cbff00;
+	text-align: center;
+	font-size: 1.5em;
+	
+}
+

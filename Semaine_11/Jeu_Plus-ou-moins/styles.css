@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: url(images/carbon_fibre.png) repeat;
+	
+	
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	
+	margin: 0;
+	text-align: center;	
+}
+
+
+
+.container {
+	width: 480px;
+	background-color:goldenrod;
+	margin: auto;
+}
+
+
+
+header{
+	display: flex;
+	
+	
+	background-color: #424242;
+	height: 100px;
+}
+
+
+header h1{
+	margin: auto;
+	font-size: 2.5em;
+	font-weight: 300;
+	color: #fff;
+}
+
+
+
+main {
+	height: 350px;
+	padding-top: 20px;
+}
+
+
+main h2 {
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #424242;
+}
+
+
+#userNumber {
+	width: 184px;
+	height: 25px;
+	border: none;
+	padding: 8px;
+	text-align: center;
+	margin-top: 30px;
+	font-size: 1.2em;	
+}
+
+
+button {
+	width: 200px;
+	height: 50px;
+	font-size: 1em;
+	background-color:chartreuse;
+	border: none;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: #424242;
+}
+
+
+#reset{
+	background-color: darkred;
+	color: beige;
+}
+
+
+#resultat {
+	font-size: 1.3em;
+	color: beige;
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Jeu pierre feuille ciseau</title>
+	<link href="styles.css" type="text/css" rel="stylesheet" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Damion" rel="stylesheet" />
+
+</head>
+
+<body>
+	<header>
+		<h1>Pierre, feuille<br/> ou ciseaux ?</h1>
+		
+		
+	</header>
+	
+	<!-- ****** Barre de menu ****** -->
+		<!-- *************************** -->
+		<div class="menu">
+			<div class="boutons">
+				<select name="choixUser" id="choixUser">
+					<option value="None">faites votre choix</option>
+					<option value="pierre">Pierre</option>
+					<option value="feuille">Feuille</option>
+					<option value="ciseaux">Ciseaux</option>
+				</select>
+				
+				<button id="go">GO</button>
+			</div>
+			
+			<div class="score">
+				<p>Nombre de victoires : <span id="victoire">0</span></p>
+				<p>Pourcentage de victoires : <span id="pourCent">0</span>/100</p>
+				
+			</div>
+		</div><!-- Fin menu -->
+		
+		
+		
+	<main>		
+		<!-- ****** Pictos ****** -->
+		<!-- ******************** -->
+		<div class="pictos">
+			<div id="userPicto" class="pictoNeutre">
+				
+			</div>
+			
+			<div id="computerPicto" class="pictoNeutre">
+				
+			</div>
+		</div><!-- Fin pictos -->
+		
+		<!-- ****** Alerte ****** -->
+		<!-- ******************** -->
+		<h2 id="alert"></h2>		
+	</main>
+
+	<!----><script src="script_jeu_pfc.js"></script>
+</body>
+</html>

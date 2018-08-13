@@ -1,0 +1,182 @@
+/* CSS Document */
+html {
+	height: 100%;
+}
+
+
+body {
+	font-family: 'Damion', cursive;
+	margin: 0;
+	background-image: -webkit-linear-gradient(-45deg, #ccff00 0%, #7fff61 37%, #00ffff 100%);
+	background-image: -moz-linear-gradient(-45deg, #ccff00 0%, #7fff61 37%, #00ffff 100%);
+	background-image: -o-linear-gradient(-45deg, #ccff00 0%, #7fff61 37%, #00ffff 100%);
+	background-image: linear-gradient(135deg, #ccff00 0%, #7fff61 37%, #00ffff 100%);
+}
+
+header {
+	margin: auto;
+	
+	height: 250px;
+	background-image: -webkit-linear-gradient(90deg, #ff9933 0%, #ff6633 100%);
+	background-image: -moz-linear-gradient(90deg, #ff9933 0%, #ff6633 100%);
+	background-image: -o-linear-gradient(90deg, #ff9933 0%, #ff6633 100%);
+	background-image: linear-gradient(0deg, #ff9933 0%, #ff6633 100%);
+	
+	display: flex;
+}
+
+header h1 {
+	margin: auto;
+	
+	
+	color: #ffffff;
+	font-size: 75px;
+	font-weight: 400;
+	text-shadow: 0px 5px 8.4px rgba(0, 51, 51, 0.5);
+	text-align: center;
+	line-height: 0.8em;
+}
+
+
+/* ************** Menu ************** */
+/* ********************************** */
+.menu {
+	height: 55px;
+	background-color: #45bbff;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ******** Boutons ******** */
+.boutons{
+	margin-right: 30px;
+}
+
+#choixUser{
+	width: 155px;
+	height: 27px;
+	background-color: #313131;
+	
+	font-family: 'Damion', cursive;
+	text-align: center;
+	color: #ffffff;
+	font-size: 18px;
+	font-weight: 400;
+	border: 0;
+	
+	cursor:pointer;
+
+}
+
+
+#go{
+	width: 45px;
+	height: 27px;
+	background-color: #ff6633;
+	padding: 0;
+	
+	font-family: Arial;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 400;
+	text-shadow:0px 1px 0px #2f6627;
+	padding-top: 2px;
+
+	border: 0;
+	cursor:pointer;
+	border-radius: 8px;
+}
+
+#go:hover {
+	background-color:#c74d24;
+}
+
+#go:active {
+	position:relative;
+	top:1px;
+}
+
+/* ******** Score ******** */
+.score{
+	margin-left: 30px;
+}
+
+.score p {
+	margin: 0;
+	font-family: 'Damion', cursive;
+
+	color: #313131;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1em;
+}
+
+
+
+
+
+/* ******** Pictos et alerte ******** */
+/* ********************************** */
+
+main {
+	
+	
+}
+
+
+.pictos{
+	display: flex;
+	justify-content: center;
+}
+
+
+#userPicto, #computerPicto{
+	height: 190px;
+	width: 190px;	
+	
+	margin-top: 100px;
+}
+
+
+#userPicto{
+	margin-right: 60px;
+	background: url(images/Picto_Vide.png) no-repeat center;
+}
+
+
+#computerPicto{
+	margin-left: 60px;
+	background: url(images/Picto_Vide.png) no-repeat center;
+}
+
+
+#alert {
+	text-align: center;
+	font-size: 70px;
+	color:#313131
+}
+
+
+/* *********** Les pictos *********** */
+
+/*.pictoNeutre{
+	background: url(images/Picto_Vide.png) no-repeat center;
+}
+
+
+.pictoPierre{
+	background: url(images/Picto_cailloux.png) no-repeat center;
+}
+
+
+.pictoFeuille{
+	background: url(images/Picto_feuille.png) no-repeat center;
+}
+
+
+.pictoCiseaux{
+	background: url(images/Picto_ciseaux.png) no-repeat center;
+}
+*/
