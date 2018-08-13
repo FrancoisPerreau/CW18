@@ -1,0 +1,36 @@
+<!-- app/views/articles/show.html.erb -->
+
+<h2><%= @article.title %></h2>
+<p><%= @article.content %></p>
+<br />
+<p class="link_retour"><a href="/">Revenir à l'accueil</a></p>
+<br />
+
+<hr class="sepa_form" />
+
+<!-- Formulaire pour poster un commentaire -->
+<p class="my_form">Laissez un commentaire</p>
+<%= form_tag "/articles/#{@article.id}", methode: "post" do %>
+	<div class="form-group">
+	  <input type="text" name="writer" id="writer" placeholder="Votre pseudo" class="form-control" />
+	  <br />
+	  <textarea name="content" id="content" rows="6" class="form-control" ></textarea>
+	  <br>
+	  <input type="submit" value="Validez" class="btn btn-primary" />
+	</div>
+<% end %>
+
+
+
+
+<!-- Affichage des commentaires -->
+<hr />
+<% @comments.each do |comment|  %>
+
+  <p class="writer"> <%= comment.writer %> </p>
+  <!-- simple_format(h()) pour pouvoir tenir compte des retours à la ligne dans le textarea -->
+  <p class="content"> <%= simple_format(h(comment.content)) %> </p>  
+
+<hr />
+
+<% end %>

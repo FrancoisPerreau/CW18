@@ -1,0 +1,16 @@
+<!-- app/views/pages/home.html.erb -->
+
+<h1>Liste des articles</h1>
+
+<hr class="sepa_form">
+
+<!-- Boucle pour afficher la liste des articles sous forme de liens vers les pages article -->
+<% @articles.each do |article| %>
+  <h2><%= article_lien (article) %></h2> <!-- helper article_lien -->
+  <hr />
+<% end %>
+
+<!-- Helper GEM Kaminari
+avec le theme de bootstrap utilisable grace à la GEM : 'bootstrap-kaminari-views'-->
+<%= paginate @articles, :theme => 'twitter-bootstrap-3',
+						:pagination_class => "pagination-small pagination-centered" %>
