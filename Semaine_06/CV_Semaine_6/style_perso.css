@@ -1,0 +1,351 @@
+/* ******************************************************************* */
+/* ********************** Définition des polices ********************* */
+/* ******************************************************************* */
+
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto_condensedbold';
+    src: url('fonts/RobotoCondensed-Bold-webfont.eot');
+    src: url('fonts/RobotoCondensed-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoCondensed-Bold-webfont.woff') format('woff'),
+         url('fonts/RobotoCondensed-Bold-webfont.ttf') format('truetype'),
+         url('fonts/RobotoCondensed-Bold-webfont.svg#roboto_condensedbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'lobster_1.3regular';
+    src: url('fonts/lobster_1.3-webfont.woff2') format('woff2'),
+         url('fonts/lobster_1.3-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* ******************************************************************* */
+/* ****************** Éléments principaux de la page ***************** */
+/* ******************************************************************* */
+
+body {
+    margin: 0;
+    background: url('images/carbon_fibre.png') repeat;
+
+
+    font-family: 'robotolight', Arial, sans-serif;
+    font-weight: normal;
+    color: #474747;
+}
+
+
+
+header {
+    background-image: url('images/CV-2017-Fond-V7-large.jpg');
+    background-size: cover;
+    background-position: center;
+
+    height: 600px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.container-fluid  {
+    margin: auto;
+  }
+
+      .containeur--padding0 {
+        padding: 0;
+
+      }
+
+
+.row {
+  display: flex;
+}
+
+.row--aside {
+  flex-direction: column;
+}
+
+.colonne-contenu {
+    background-color: #F2F2F2;
+    padding-top: 30px;
+}
+
+
+.colonne-aside {
+        background-color: #dfdcd8;
+}
+
+
+
+/* ******************************************************************* */
+/* ****************************** header ***************************** */
+/* ******************************************************************* */
+
+
+
+#titre_principal h1, #titre_principal h2 {
+  color: #F2F2F2;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+  text-shadow: 3px 3px 10px #3c2c2c;
+
+}
+
+
+#titre_principal h2 {
+    font-family: 'lobster_1.3regular', Arial, sans-serif;
+    font-size: 3em;
+
+}
+
+#titre_principal h1 {
+    text-transform: uppercase;
+    font-family: 'roboto_condensedbold', Arial, sans-serif;
+    font-size: 5.5em;
+	
+	margin-bottom: 10px;
+}
+
+.nav_header {
+    background-color: rgba(58, 58, 58, 0.85);
+    width: 100%;
+
+}
+.nav_header ul {
+    display: flex;
+
+    list-style: none;
+    justify-content: center;
+    margin: 10px 0;
+
+}
+
+.nav_header li {
+    margin: 0 30px;
+}
+
+.nav_header a {
+    font-size: 1.2em;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+
+.nav_header a:hover {
+    border-bottom: 3px solid #bd7543;
+}
+
+
+/* ******************************************************************* */
+/* ****************************** Corps ****************************** */
+/* ******************************************************************* */
+.colonne-contenu {
+    background-color: #F2F2F2;
+}
+
+
+
+.parcours_formation {
+   padding: 0 15px;
+}
+
+section {
+  padding-bottom: 50px;
+}
+
+aside {
+    flex: 1.2;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.section_titre {
+    font-size: 1.8em;
+    font-weight: normal;
+    margin: 0;
+    border-bottom: 1px dashed #474747;
+}
+
+.contenu_titre {
+      font-size: 1.4em;
+      font-weight: normal;
+      margin: 16px 0 0 0;
+}
+
+
+.liste_desc {
+      margin: 0;
+      padding-left: 15px;
+      list-style: none;
+}
+
+.contenu_desc, .soc_bold, .titre_bold, .p_bold {
+      font-family: 'robotoregular';
+      font-weight: normal;
+}
+
+.contenu_desc, .contenu_soc, .contenu_miss {
+      font-size: 1.15em;
+}
+
+.soc_bold {
+      color: #bd7543;
+}
+
+.contenu_miss {
+    margin: 0;
+}
+
+
+/* ****************************** aside ****************************** */
+.titre_comp_savoir {
+    font-size: 1.4em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.nom_comp{
+    font-size: 1.1em;
+    font-family: 'robotoregular';
+    font-weight: normal;
+    
+    margin-left: 10px;
+}
+
+.bloc_comp {
+  height: 25px;
+  margin-top: 4px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.barre {
+  margin-top: 2px;
+  padding: 0;
+  height: 14px;
+  width: 80px;
+  border-radius: 7px;
+
+  background-color: #F2F2F2;
+  border: 1px solid #F2F2F2;
+}
+
+.jauge {
+  background-color: #bd7543;
+  height: 12px;
+  border-radius: 7px;
+}
+
+
+
+.barre_90 {
+   width: 90%;
+}
+
+.barre_80 {
+   width: 80%;
+}
+
+.barre_30 {
+    width: 30%;
+}
+
+.barre_40 {
+    width: 40%;
+}
+
+.comp_savoir {
+  margin-bottom: 30px;
+  }
+
+iframe {
+  margin-top: 30px;
+  align-self: flex-end;
+
+}
+
+/* ******************************************************************** */
+/* ****************************** footer ****************************** */
+/* ******************************************************************** */
+footer {
+    background-image: url('images/Footer-960x40.jpg');
+    text-align: center;
+  }
+
+footer p {
+    margin: 0;
+    padding: 5px;
+    background-color: rgba(58, 58, 58, 0.8);
+}
+
+footer a {
+    margin: 0 20px 0 0;
+}
+
+
+
+
+/* ******************************************************************** */
+/* ************************** MEDIA QUERIES *************************** */
+/* ******************************************************************** */
+
+@media screen and (max-width: 768px) {
+    .row {
+      display: block;
+    }
+
+    iframe {
+      display: none;
+    }
+
+    .row--aside {
+      padding-left: 15px;
+    }
+}
+
+
+
